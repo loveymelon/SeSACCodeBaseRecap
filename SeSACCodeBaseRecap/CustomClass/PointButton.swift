@@ -12,6 +12,7 @@ class PointButton: UIButton {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
         configureView()
     }
     
@@ -23,12 +24,13 @@ class PointButton: UIButton {
 
 extension PointButton {
     func configureView() {
-        self.backgroundColor = Color.pointColor.setColor
+        self.backgroundColor = Color.pointColor
         self.layer.cornerRadius = 10
-        self.setTitleColor(Color.stringColor.setColor, for: .normal)
+        self.setTitleColor(Color.stringColor, for: .normal)
+        self.titleLabel?.font = .boldSystemFont(ofSize: 18)
         
         self.snp.makeConstraints { make in
-            make.height.equalTo(22)
+            make.height.equalTo(50)
         }
     }
 }

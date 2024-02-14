@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(windowScene: windowScene)
         
-        let rootVC = OnboardingViewController()
+        let rootVC = SearchViewController()
         let nav = UINavigationController(rootViewController: rootVC)
         
         window?.rootViewController = nav
